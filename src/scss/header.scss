@@ -1,0 +1,100 @@
+@import "variables.scss";
+
+.header {
+  margin-bottom: 81px;
+  &__top-inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 12px;
+    font-family: $SF-bold;
+    font-weight: 700;
+    .menu {
+      &__item {
+        display: inline-block;
+        margin-right: 50px;
+        &:last-child {
+          margin-right: 0;
+        }
+      }
+    }
+    .logo {
+      padding: 25px 0 21px;
+    }
+  }
+  &__info {
+    display: flex;
+    &-address {
+      margin-right: 60px;
+      width: 265px;
+      padding-left: 30px;
+      position: relative;
+      &::before {
+        content: "";
+        position: absolute;
+        background: url(../images/map-marker.svg);
+        width: 30px;
+        height: 30px;
+        left: 0;
+        top: -10px;
+      }
+    }
+    .user-list {
+      display: flex;
+      margin-right: 10px;
+      align-items: center;
+      &__item {
+        margin-right: 10px;
+        .cart {
+          position: relative;
+          &__number {
+            position: absolute;
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
+            background-color: $main-color;
+            color: $light-color;
+            font-weight: 500;
+            font-size: 10px;
+            line-height: 22px;
+            text-align: center;
+            bottom: -14px;
+            right: -14px;
+          }
+        }
+      }
+    }
+  }
+  &__bottom {
+    .menu-categories {
+      display: flex;
+      justify-content: space-around;
+      background-color: $bg-color;
+      align-items: center;
+      min-height: 53px;
+      &__link {
+        padding: 15px 0 14px;
+        position: relative;
+        &::before {
+          content: "";
+          position: absolute;
+          transition: ease-out 0.3s;
+          width: 0;
+          left: auto;
+          right: 0;
+          bottom: 0;
+          height: 3px;
+          background-color: $main-color;
+        }
+        &:hover {
+          color: #000;
+          &::before {
+            width: 100%;
+            left: 0;
+            right: auto;
+          }
+        }
+      }
+    }
+  }
+}

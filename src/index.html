@@ -5,6 +5,8 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Drive Moto</title>
+  <link rel="stylesheet" type="text/css" href="scss/fonts.scss" />
+  <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@300;400;600;700&display=swap" rel="stylesheet">
 </head>
 
 <body>
@@ -19,12 +21,54 @@
              <li class="menu__item"><a href="#" class="menu__link">Delivery and Payment</a></li>
            </ul>
          </nav>
-         <a href="#" class="logo"></a>
+         <a href="#" class="logo"><img class="logo__img" src="images/logo.svg" alt="logo"></a>
+         <div class="header__info">
+           <p class="header__info-address">Dublin, 160 Collins Park</p>
+           <ul class="user-list">
+             <li class="user-list__item"><a class="user-list__link favorite-item" href="#">
+               <img src="images/heart.svg" alt="heart">
+             </a></li>
+             <li class="user-list__item"><a class="user-list__link user" href="#">
+               <img src="images/user.svg" alt="user">
+             </a></li>
+             <li class="user-list__item"><a class="user-list__link cart" href="#">
+               <img src="images/basket.svg" alt="basket">
+               <p class="cart__number">1</p>
+             </a></li>
+           </ul>
+         </div>
        </div>
      </div>                                     
     </div>
     <div class="header__bottom">
-      <div class="container"></div>
+      <div class="container">
+          <ul class="menu-categories">
+            <li class="menu-categories__item">
+              <a href="#" class="menu-categories__link">Quads</a>
+            </li>
+            <li class="menu-categories__item">
+              <a href="#" class="menu-categories__link">Speed Boats</a>
+            </li>
+            <li class="menu-categories__item">
+              <a href="#" class="menu-categories__link">Personal watercrafts</a>
+            </li>
+            <li class="menu-categories__item">
+              <a href="#" class="menu-categories__link">Fishing Boats</a>
+            </li>
+            <li class="menu-categories__item">
+              <a href="#" class="menu-categories__link">Amphibious ATV</a>
+            </li>
+            <li class="menu-categories__item">
+              <a href="#" class="menu-categories__link">Snowmobile</a>
+            </li>
+            <li class="menu-categories__item">
+              <a href="#" class="menu-categories__link">Boat Engines & Motors</a>
+            </li>
+            <li class="menu-categories__item">
+              <a href="#" class="menu-categories__link">Parts</a>
+            </li>
+          </ul>
+      </div>
     </div>
   </header>
   <script src="js/index.js"></script>
