@@ -1,12 +1,2 @@
 @import "normalize.css";
 @import "variables.scss";
-
-body {
-  background-color: $mainColor;
-}
-
-h1 {
-  color: $textColor;
-  border: 1px solid red;
-  border-radius: 5px;
-}
