@@ -3,7 +3,6 @@
 .header {
   margin-bottom: 81px;
   &__top-inner {
-    display: flex;
     justify-content: space-between;
     align-items: center;
     min-height: 12px;
@@ -23,7 +22,6 @@
     }
   }
   &__info {
-    display: flex;
     &-address {
       margin-right: 60px;
       width: 265px;
@@ -40,7 +38,6 @@
       }
     }
     .user-list {
-      display: flex;
       margin-right: 10px;
       align-items: center;
       &__item {
@@ -67,7 +64,6 @@
   }
   &__bottom {
     .menu-categories {
-      display: flex;
       justify-content: space-around;
       background-color: $bg-color;
       align-items: center;
@@ -87,7 +83,7 @@
           background-color: $main-color;
         }
         &:hover {
-          color: #000;
+          color: $dark-color;
           &::before {
             width: 100%;
             left: 0;
