@@ -1,0 +1,88 @@
+.products {
+  &-title {
+    font-family: $numbers-font;
+    font-weight: bold;
+    font-size: 25px;
+    line-height: 30px;
+    color: $text-color;
+  }
+  &__tabs {
+    &-menu {
+      margin: 25px 0;
+    }
+    &-link {
+      margin-right: 50px;
+      padding-bottom: 10px;
+      position: relative;
+      font-weight: 500;
+      font-size: 15px;
+      line-height: 18px;
+      text-align: center;
+      color: $text-color;
+      &::before {
+        content: "";
+        position: absolute;
+        transition: ease-out 0.3s;
+        width: 0;
+        left: auto;
+        right: 0;
+        bottom: 0;
+        height: 3px;
+        background-color: $main-color;
+      }
+      &:hover {
+        color: $dark-color;
+        &::before {
+          width: 100%;
+          left: 0;
+          right: auto;
+        }
+      }
+    }
+    &-link.products__active-link {
+      &::before {
+        content: "";
+        position: absolute;
+        width: 100%;
+        left: 0;
+        bottom: 0;
+        height: 3px;
+        background-color: $main-color;
+      }
+    }
+  }
+  &-slider {
+    &__btn {
+      top: 50%;
+      transform: translateY(-50%);
+      position: absolute;
+      background-color: transparent;
+      cursor: pointer;
+      margin: 0;
+      padding: 0;
+      border: none;
+      width: 20px;
+      height: 20px;
+      z-index: 99;
+      outline: none;
+    }
+    &__btnprev {
+      background: url(../images/products/arrow-prev.svg) center no-repeat;
+      left: -20px;
+    }
+    &__btnnext {
+      background: url(../images/products/arrow-next.svg) center no-repeat;
+      right: -20px;
+    }
+  }
+  &__show-more__btn {
+    margin: 35px 0 80px;
+    padding: 16px 43px;
+    font-size: 15px;
+    line-height: 18px;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: $text-color;
+    background: $bg-color;
+  }
+}

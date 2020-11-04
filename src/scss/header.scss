@@ -1,7 +1,6 @@
 @import "variables.scss";
 
 .header {
-  margin-bottom: 81px;
   &__top-inner {
     justify-content: space-between;
     align-items: center;
@@ -55,7 +54,7 @@
             font-size: 10px;
             line-height: 22px;
             text-align: center;
-            bottom: -14px;
+            bottom: 0;
             right: -14px;
           }
         }
@@ -89,6 +88,17 @@
             left: 0;
             right: auto;
           }
+        }
+      }
+      &__link.active-categorie {
+        &::before {
+          content: "";
+          position: absolute;
+          width: 100%;
+          left: 0;
+          bottom: 0;
+          height: 3px;
+          background-color: $main-color;
         }
       }
     }

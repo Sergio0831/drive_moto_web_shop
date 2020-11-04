@@ -8,5 +8,5 @@ module.exports = {
       { "cleanupIDs": true },
     ]
   },
-  "webp": { "quality": 30 }
+  "webp": { "quality": 30 },
 }

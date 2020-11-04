@@ -2,14 +2,10 @@ import $ from 'jquery';
 import 'slick-carousel';
 import 'normalize.css';
 import "../scss/style.scss";
+import { imageSliders } from "./sliders";
+import { tabs } from "./tabs";
+import { addFavoriteItem } from "./favorite-item";
 
-
-// Banner Slider
-$(function() {
-  $(".banner-section__slider").slick({
-    slidesToShow: 1,
-    dots: true,
-    prevArrow: '<button class="banner-section__slider-btn banner-section__slider-btnprev"></button>',
-    nextArrow: '<button class="banner-section__slider-btn banner-section__slider-btnnext"></button>',
-  })
-})
+$(window).on('load', imageSliders);
+tabs();
+addFavoriteItem();

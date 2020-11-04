@@ -14295,7 +14295,90 @@ var reloadCSS = require('_css_loader');
 
 module.hot.dispose(reloadCSS);
 module.hot.accept(reloadCSS);
-},{"normalize.css":"../node_modules/normalize.css/normalize.css","./..\\fonts\\SFProDisplay-Regular.woff2":[["SFProDisplay-Regular.16d8f810.woff2","fonts/SFProDisplay-Regular.woff2"],"fonts/SFProDisplay-Regular.woff2"],"./..\\fonts\\SFProDisplay-Regular.woff":[["SFProDisplay-Regular.72c8e582.woff","fonts/SFProDisplay-Regular.woff"],"fonts/SFProDisplay-Regular.woff"],"./..\\fonts\\SFProDisplay-Medium.woff2":[["SFProDisplay-Medium.f64cd938.woff2","fonts/SFProDisplay-Medium.woff2"],"fonts/SFProDisplay-Medium.woff2"],"./..\\fonts\\SFProDisplay-Medium.woff":[["SFProDisplay-Medium.b365cb09.woff","fonts/SFProDisplay-Medium.woff"],"fonts/SFProDisplay-Medium.woff"],"./..\\fonts\\SFProDisplay-Semibold.woff2":[["SFProDisplay-Semibold.90863711.woff2","fonts/SFProDisplay-Semibold.woff2"],"fonts/SFProDisplay-Semibold.woff2"],"./..\\fonts\\SFProDisplay-Semibold.woff":[["SFProDisplay-Semibold.275b6615.woff","fonts/SFProDisplay-Semibold.woff"],"fonts/SFProDisplay-Semibold.woff"],"./..\\fonts\\SFProDisplay-Bold.woff2":[["SFProDisplay-Bold.c4ce2944.woff2","fonts/SFProDisplay-Bold.woff2"],"fonts/SFProDisplay-Bold.woff2"],"./..\\fonts\\SFProDisplay-Bold.woff":[["SFProDisplay-Bold.49b7b226.woff","fonts/SFProDisplay-Bold.woff"],"fonts/SFProDisplay-Bold.woff"],"./..\\images\\map-marker.svg":[["map-marker.e305248c.svg","images/map-marker.svg"],"images/map-marker.svg"],"./..\\images\\banner-slider\\prev-arrow.svg":[["prev-arrow.0dda5745.svg","images/banner-slider/prev-arrow.svg"],"images/banner-slider/prev-arrow.svg"],"./..\\images\\banner-slider\\next-arrow.svg":[["next-arrow.0d77ca94.svg","images/banner-slider/next-arrow.svg"],"images/banner-slider/next-arrow.svg"],"_css_loader":"../node_modules/parcel-bundler/src/builtins/css-loader.js"}],"js/index.js":[function(require,module,exports) {
+},{"normalize.css":"../node_modules/normalize.css/normalize.css","./..\\fonts\\SFProDisplay-Regular.woff2":[["SFProDisplay-Regular.16d8f810.woff2","fonts/SFProDisplay-Regular.woff2"],"fonts/SFProDisplay-Regular.woff2"],"./..\\fonts\\SFProDisplay-Regular.woff":[["SFProDisplay-Regular.72c8e582.woff","fonts/SFProDisplay-Regular.woff"],"fonts/SFProDisplay-Regular.woff"],"./..\\fonts\\SFProDisplay-Medium.woff2":[["SFProDisplay-Medium.f64cd938.woff2","fonts/SFProDisplay-Medium.woff2"],"fonts/SFProDisplay-Medium.woff2"],"./..\\fonts\\SFProDisplay-Medium.woff":[["SFProDisplay-Medium.b365cb09.woff","fonts/SFProDisplay-Medium.woff"],"fonts/SFProDisplay-Medium.woff"],"./..\\fonts\\SFProDisplay-Semibold.woff2":[["SFProDisplay-Semibold.90863711.woff2","fonts/SFProDisplay-Semibold.woff2"],"fonts/SFProDisplay-Semibold.woff2"],"./..\\fonts\\SFProDisplay-Semibold.woff":[["SFProDisplay-Semibold.275b6615.woff","fonts/SFProDisplay-Semibold.woff"],"fonts/SFProDisplay-Semibold.woff"],"./..\\fonts\\SFProDisplay-Bold.woff2":[["SFProDisplay-Bold.c4ce2944.woff2","fonts/SFProDisplay-Bold.woff2"],"fonts/SFProDisplay-Bold.woff2"],"./..\\fonts\\SFProDisplay-Bold.woff":[["SFProDisplay-Bold.49b7b226.woff","fonts/SFProDisplay-Bold.woff"],"fonts/SFProDisplay-Bold.woff"],"./..\\images\\map-marker.svg":[["map-marker.e305248c.svg","images/map-marker.svg"],"images/map-marker.svg"],"./..\\images\\banner-slider\\prev-arrow.svg":[["prev-arrow.0dda5745.svg","images/banner-slider/prev-arrow.svg"],"images/banner-slider/prev-arrow.svg"],"./..\\images\\banner-slider\\next-arrow.svg":[["next-arrow.0d77ca94.svg","images/banner-slider/next-arrow.svg"],"images/banner-slider/next-arrow.svg"],"./..\\images\\categories\\link-arrow.svg":[["link-arrow.25548a30.svg","images/categories/link-arrow.svg"],"images/categories/link-arrow.svg"],"./..\\images\\products\\arrow-prev.svg":[["arrow-prev.9162ab81.svg","images/products/arrow-prev.svg"],"images/products/arrow-prev.svg"],"./..\\images\\products\\arrow-next.svg":[["arrow-next.8c3ee444.svg","images/products/arrow-next.svg"],"images/products/arrow-next.svg"],"./..\\images\\heart.svg":[["heart.47dcc97a.svg","images/heart.svg"],"images/heart.svg"],"./..\\images\\products\\heart-fill.svg":[["heart-fill.9c21d8f6.svg","images/products/heart-fill.svg"],"images/products/heart-fill.svg"],"./..\\images\\products\\basket-white.svg":[["basket-white.c929d079.svg","images/products/basket-white.svg"],"images/products/basket-white.svg"],"_css_loader":"../node_modules/parcel-bundler/src/builtins/css-loader.js"}],"js/sliders.js":[function(require,module,exports) {
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.imageSliders = imageSliders;
+
+var _jquery = _interopRequireDefault(require("jquery"));
+
+require("slick-carousel");
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function imageSliders() {
+  // Banner Slider
+  (0, _jquery.default)(".banner-section__slider").slick({
+    slidesToShow: 1,
+    fade: true,
+    dots: true,
+    prevArrow: '<button class="banner-section__slider-btn banner-section__slider-btnprev"></button>',
+    nextArrow: '<button class="banner-section__slider-btn banner-section__slider-btnnext"></button>'
+  }); // Popular products slider
+
+  (0, _jquery.default)('.products-slider').slick({
+    slidesToShow: 4,
+    slidesToScroll: 1,
+    prevArrow: '<button class="products-slider__btn products-slider__btnprev"></button>',
+    nextArrow: '<button class="products-slider__btn products-slider__btnnext"></button>'
+  });
+}
+},{"jquery":"../node_modules/jquery/dist/jquery.js","slick-carousel":"../node_modules/slick-carousel/slick/slick.js"}],"js/tabs.js":[function(require,module,exports) {
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.tabs = tabs;
+
+var _jquery = _interopRequireDefault(require("jquery"));
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function tabs() {
+  // Header nav menu
+  (0, _jquery.default)('.menu-categories__link').on('click', function () {
+    (0, _jquery.default)('.menu-categories__link').removeClass('active-categorie');
+    (0, _jquery.default)(this).addClass('active-categorie');
+  }); // Search tabs
+
+  (0, _jquery.default)('.search__tabs-item').on('click', function (e) {
+    e.preventDefault();
+    (0, _jquery.default)('.search__tabs-item').removeClass('search__active-link');
+    (0, _jquery.default)('.search__content-item').removeClass('active');
+    (0, _jquery.default)(this).addClass('search__active-link');
+    (0, _jquery.default)((0, _jquery.default)(this).attr('href')).addClass('active');
+  }); // Popular products tabs
+
+  (0, _jquery.default)('.products__tabs-link').on('click', function (e) {
+    e.preventDefault();
+    (0, _jquery.default)('.products__tabs-link').removeClass('products__active-link');
+    (0, _jquery.default)('.products__tabs-content__item').removeClass('active');
+    (0, _jquery.default)(this).addClass('products__active-link');
+    (0, _jquery.default)((0, _jquery.default)(this).attr('href')).addClass('active');
+  });
+}
+},{"jquery":"../node_modules/jquery/dist/jquery.js"}],"js/favorite-item.js":[function(require,module,exports) {
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.addFavoriteItem = addFavoriteItem;
+
+var _jquery = _interopRequireDefault(require("jquery"));
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function addFavoriteItem() {
+  (0, _jquery.default)('.product-card__favorite').on('click', function () {
+    (0, _jquery.default)(this).toggleClass('product-card__favorite--active');
+  });
+}
+},{"jquery":"../node_modules/jquery/dist/jquery.js"}],"js/index.js":[function(require,module,exports) {
 "use strict";
 
 var _jquery = _interopRequireDefault(require("jquery"));
@@ -14306,18 +14389,18 @@ require("normalize.css");
 
 require("../scss/style.scss");
 
+var _sliders = require("./sliders");
+
+var _tabs = require("./tabs");
+
+var _favoriteItem = require("./favorite-item");
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-// Banner Slider
-(0, _jquery.default)(function () {
-  (0, _jquery.default)(".banner-section__slider").slick({
-    slidesToShow: 1,
-    dots: true,
-    prevArrow: '<button class="banner-section__slider-btn banner-section__slider-btnprev"></button>',
-    nextArrow: '<button class="banner-section__slider-btn banner-section__slider-btnnext"></button>'
-  });
-});
-},{"jquery":"../node_modules/jquery/dist/jquery.js","slick-carousel":"../node_modules/slick-carousel/slick/slick.js","normalize.css":"../node_modules/normalize.css/normalize.css","../scss/style.scss":"scss/style.scss"}],"../node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
+(0, _jquery.default)(window).on('load', _sliders.imageSliders);
+(0, _tabs.tabs)();
+(0, _favoriteItem.addFavoriteItem)();
+},{"jquery":"../node_modules/jquery/dist/jquery.js","slick-carousel":"../node_modules/slick-carousel/slick/slick.js","normalize.css":"../node_modules/normalize.css/normalize.css","../scss/style.scss":"scss/style.scss","./sliders":"js/sliders.js","./tabs":"js/tabs.js","./favorite-item":"js/favorite-item.js"}],"../node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
 var OldModule = module.bundle.Module;
@@ -14345,7 +14428,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "59258" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "56931" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};

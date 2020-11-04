@@ -1,0 +1,45 @@
+.categories {
+  &__inner {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 30px;
+  }
+  &__item {
+    padding: 20px;
+    border: 1px solid $border-color;
+    border-radius: 3px;
+    transition: all 0.3s;
+    &:nth-child(3) {
+      img {
+        transform: translateX(-22px);
+      }
+    }
+    &:hover {
+      box-shadow: 3px 3px 20px rgba(50, 50, 50, 0.25);
+      .categories__item-title {
+        color: $main-color;
+      }
+    }
+    &-title {
+      font-family: $numbers-font;
+      font-weight: bold;
+      font-size: 23px;
+      line-height: 28px;
+      color: $text-color;
+      transition: all 0.3s;
+    }
+    &-text {
+      font-size: 14px;
+      line-height: 17px;
+      color: $oldPrice-color;
+      &::after {
+        content: url("../images/categories/link-arrow.svg");
+        margin-left: 3px;
+      }
+    }
+    &-img {
+      text-align: center;
+      width: 50%;
+    }
+  }
+}

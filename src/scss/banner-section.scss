@@ -75,7 +75,7 @@
         background-color: $main-color;
       }
       &-price {
-        font-family: $numbers-fornt;
+        font-family: $numbers-font;
         text-align: right;
         .new-price {
           margin-right: 7px;
@@ -124,7 +124,7 @@
       }
       &-date {
         color: $main-color;
-        font-family: $numbers-fornt;
+        font-family: $numbers-font;
         font-weight: bold;
         font-size: 18px;
         line-height: 22px;
