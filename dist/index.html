@@ -10,6 +10,7 @@
 <script src="/fonts.cbc45b66.js"></script><link rel="stylesheet" href="/js.00a46daa.css"></head>
 
 <body>
+  <!-- Header -->
   <header class="header">
     <div class="header__top">
      <div class="container">
@@ -44,13 +45,13 @@
       <div class="container">
           <ul class="menu-categories flex">
             <li class="menu-categories__item">
-              <a href="#" class="menu-categories__link">Quads</a>
+              <a href="#" class="menu-categories__link active-categorie">Quads</a>
             </li>
             <li class="menu-categories__item">
               <a href="#" class="menu-categories__link">Speed Boats</a>
             </li>
             <li class="menu-categories__item">
-              <a href="#" class="menu-categories__link active-categorie">Personal watercrafts</a>
+              <a href="#" class="menu-categories__link">Personal watercrafts</a>
             </li>
             <li class="menu-categories__item">
               <a href="#" class="menu-categories__link">Fishing Boats</a>
@@ -122,9 +123,9 @@
     <div class="container">
       <div class="search__inner">
         <div class="search__tabs">
-          <a href="#number" class="search__tabs-item ">Search by number</a>
-          <a href="#model" class="search__tabs-item  search__active-link">Search by model</a>
-          <a href="#name" class="search__tabs-item ">Search by item name</a>
+          <a href="#number" class="search__tabs-item tabs-link tabs-link--active">Search by number</a>
+          <a href="#model" class="search__tabs-item tabs-link">Search by model</a>
+          <a href="#name" class="search__tabs-item tabs-link">Search by item name</a>
         </div>
           <div class="search__content">
             <div id="number" class="search__content-item hide">
@@ -213,27 +214,28 @@
       <h2 class="products-title">Most popular items</h2>
       <div class="products__tabs">
         <div class="products__tabs-menu flex">
-          <a href="#parts" class="products__tabs-link products__active-link">spare parts</a>
-          <a href="#motors" class="products__tabs-link">motors</a>
-          <a href="#tires" class="products__tabs-link">tires</a>
-          <a href="#electronics" class="products__tabs-link">electronics</a>
-          <a href="#tools" class="products__tabs-link">tools</a>
-          <a href="#accessories" class="products__tabs-link">accessories</a>
+          <a href="#parts" class="products__tabs-link products__active-link tabs-link tabs-link--active">spare parts</a>
+          <a href="#motors" class="products__tabs-link tabs-link">motors</a>
+          <a href="#tires" class="products__tabs-link tabs-link">tires</a>
+          <a href="#electronics" class="products__tabs-link tabs-link">electronics</a>
+          <a href="#tools" class="products__tabs-link tabs-link">tools</a>
+          <a href="#accessories" class="products__tabs-link tabs-link">accessories</a>
         </div>
         <div class="products__tabs-content">
           <!-- Spare parts tab -->
-          <div class="products__tabs-content__item hide active" id="parts">
-            <!-- Popular products slider -->
-            <div class="products-slider">
+          <div class="products__tabs-content__item tabs-item hide active" id="parts">
+             <!--Products slider -->
+             <div class="products-slider">
               <!-- 1 -->
                 <div class="products-slider__item">
                   <div class="product-card center">
                     <a href="#" class="product-card__hover-link">view product</a>
                     <button class="product-card__favorite"></button>
-                    <img src="/bagpack.3215178a.png" alt="bagpack" class="product-card__img">
-                    <h3 class="product-card__title">Waterproof <br>
-                      Backpack</h3>
-                    <p class="product-card__price">104.99 &euro;</p>
+                    <div class="product-card__img-wrapper">
+                      <img src="/bagpack.3215178a.png" alt="bagpack" class="product-card__img">
+                    </div>
+                    <h3 class="product-card__title">Waterproof <br> Backpack</h3>
+                    <p class="product-card__price">105.99 &euro;</p>
                     <p class="out-off-stock--text">out off stock</p>
                     <a href="#" class="notify-link"> <span>notify me</span> </a>
                     <button class="product-card__basket"></button>
@@ -241,12 +243,13 @@
                 </div>
               <!-- 2 -->
                 <div class="products-slider__item">
-                  <div class="product-card center sale">
+                  <div class="product-card center">
                     <a href="#" class="product-card__hover-link">view product</a>
                     <button class="product-card__favorite"></button>
-                    <img src="/life-jacket.41500bbf.png" alt="bagpack" class="product-card__img">
-                    <h3 class="product-card__title">Life Jacket BRP Men's Airflow PFD
-                    </h3>
+                    <div class="product-card__img-wrapper">
+                      <img src="/life-jacket.41500bbf.png" alt="lifejacket" class="product-card__img">
+                    </div>
+                    <h3 class="product-card__title">Life Jacket BRP Men's Airflow PFD</h3>
                     <p class="product-card__price">74.99 &euro;</p>
                     <p class="out-off-stock--text">out off stock</p>
                     <a href="#" class="notify-link"> <span>notify me</span> </a>
@@ -258,9 +261,11 @@
                   <div class="product-card center">
                     <a href="#" class="product-card__hover-link">view product</a>
                     <button class="product-card__favorite"></button>
-                    <img src="/audio-system.bea0bc41.png" alt="bagpack" class="product-card__img">
+                    <div class="product-card__img-wrapper">
+                      <img src="/audio-system.bea0bc41.png" alt="audio-system" class="product-card__img">
+                    </div>
                     <h3 class="product-card__title">BRP Audio-Premium System</h3>
-                    <p class="product-card__price">734.99 &euro;</p>
+                    <p class="product-card__price">739.99 &euro;</p>
                     <p class="out-off-stock--text">out off stock</p>
                     <a href="#" class="notify-link"> <span>notify me</span> </a>
                     <button class="product-card__basket"></button>
@@ -268,12 +273,14 @@
               </div>
               <!-- 4 -->
               <div class="products-slider__item">
-                <div class="product-card center">
+                <div class="product-card center  out-off-stock">
                   <a href="#" class="product-card__hover-link">view product</a>
                   <button class="product-card__favorite"></button>
-                  <img src="/bagpack.3215178a.png" alt="bagpack" class="product-card__img">
-                  <h3 class="product-card__title">Waterproof <br> Backpack</h3>
-                  <p class="product-card__price">104.99 &euro;</p>
+                  <div class="product-card__img-wrapper">
+                    <img src="/equipment.1b37efdb.png" alt="safety-kit" class="product-card__img">
+                  </div>
+                  <h3 class="product-card__title">Safety Equipment Kit</h3>
+                  <p class="product-card__price">18.99 &euro;</p>
                   <p class="out-off-stock--text">out off stock</p>
                   <a href="#" class="notify-link"> <span>notify me</span> </a>
                   <button class="product-card__basket"></button>
@@ -281,12 +288,13 @@
               </div>
               <!-- 5 -->
               <div class="products-slider__item">
-                <div class="product-card center sale">
+                <div class="product-card center">
                   <a href="#" class="product-card__hover-link">view product</a>
                   <button class="product-card__favorite"></button>
-                  <img src="/life-jacket.41500bbf.png" alt="bagpack" class="product-card__img">
-                  <h3 class="product-card__title">Life Jacket BRP Men's Airflow PFD
-                  </h3>
+                  <div class="product-card__img-wrapper">
+                    <img src="/life-jacket.41500bbf.png" alt="lifejacket" class="product-card__img">
+                  </div>
+                  <h3 class="product-card__title">Life Jacket BRP Men's Airflow PFD</h3>
                   <p class="product-card__price">74.99 &euro;</p>
                   <p class="out-off-stock--text">out off stock</p>
                   <a href="#" class="notify-link"> <span>notify me</span> </a>
@@ -295,10 +303,12 @@
               </div>
               <!-- 6 -->
               <div class="products-slider__item">
-                <div class="product-card center out-off-stock">
+                <div class="product-card center  out-off-stock">
                   <a href="#" class="product-card__hover-link">view product</a>
                   <button class="product-card__favorite"></button>
-                  <img src="/equipment.1b37efdb.png" alt="bagpack" class="product-card__img">
+                  <div class="product-card__img-wrapper">
+                    <img src="/equipment.1b37efdb.png" alt="safety-kit" class="product-card__img">
+                  </div>
                   <h3 class="product-card__title">Safety Equipment Kit</h3>
                   <p class="product-card__price">18.99 &euro;</p>
                   <p class="out-off-stock--text">out off stock</p>
@@ -309,18 +319,19 @@
             </div>
           </div>
           <!-- Motors tab -->
-          <div class="products__tabs-content__item hide" id="motors">
-            <!-- Popular products slider -->
-            <div class="products-slider">
+          <div class="products__tabs-content__item tabs-item hide" id="motors">
+             <!--Products slider -->
+             <div class="products-slider">
               <!-- 1 -->
                 <div class="products-slider__item">
                   <div class="product-card center">
                     <a href="#" class="product-card__hover-link">view product</a>
                     <button class="product-card__favorite"></button>
-                    <img src="/bagpack.3215178a.png" alt="bagpack" class="product-card__img">
-                    <h3 class="product-card__title">Waterproof <br>
-                      Backpack</h3>
-                    <p class="product-card__price">104.99 &euro;</p>
+                    <div class="product-card__img-wrapper">
+                      <img src="/bagpack.3215178a.png" alt="bagpack" class="product-card__img">
+                    </div>
+                    <h3 class="product-card__title">Waterproof <br> Backpack</h3>
+                    <p class="product-card__price">105.99 &euro;</p>
                     <p class="out-off-stock--text">out off stock</p>
                     <a href="#" class="notify-link"> <span>notify me</span> </a>
                     <button class="product-card__basket"></button>
@@ -328,12 +339,13 @@
                 </div>
               <!-- 2 -->
                 <div class="products-slider__item">
-                  <div class="product-card center sale">
+                  <div class="product-card center">
                     <a href="#" class="product-card__hover-link">view product</a>
                     <button class="product-card__favorite"></button>
-                    <img src="/life-jacket.41500bbf.png" alt="bagpack" class="product-card__img">
-                    <h3 class="product-card__title">Life Jacket BRP Men's Airflow PFD
-                    </h3>
+                    <div class="product-card__img-wrapper">
+                      <img src="/life-jacket.41500bbf.png" alt="lifejacket" class="product-card__img">
+                    </div>
+                    <h3 class="product-card__title">Life Jacket BRP Men's Airflow PFD</h3>
                     <p class="product-card__price">74.99 &euro;</p>
                     <p class="out-off-stock--text">out off stock</p>
                     <a href="#" class="notify-link"> <span>notify me</span> </a>
@@ -345,9 +357,11 @@
                   <div class="product-card center">
                     <a href="#" class="product-card__hover-link">view product</a>
                     <button class="product-card__favorite"></button>
-                    <img src="/audio-system.bea0bc41.png" alt="bagpack" class="product-card__img">
+                    <div class="product-card__img-wrapper">
+                      <img src="/audio-system.bea0bc41.png" alt="audio-system" class="product-card__img">
+                    </div>
                     <h3 class="product-card__title">BRP Audio-Premium System</h3>
-                    <p class="product-card__price">734.99 &euro;</p>
+                    <p class="product-card__price">739.99 &euro;</p>
                     <p class="out-off-stock--text">out off stock</p>
                     <a href="#" class="notify-link"> <span>notify me</span> </a>
                     <button class="product-card__basket"></button>
@@ -355,12 +369,14 @@
               </div>
               <!-- 4 -->
               <div class="products-slider__item">
-                <div class="product-card center">
+                <div class="product-card center  out-off-stock">
                   <a href="#" class="product-card__hover-link">view product</a>
                   <button class="product-card__favorite"></button>
-                  <img src="/bagpack.3215178a.png" alt="bagpack" class="product-card__img">
-                  <h3 class="product-card__title">Waterproof <br> Backpack</h3>
-                  <p class="product-card__price">104.99 &euro;</p>
+                  <div class="product-card__img-wrapper">
+                    <img src="/equipment.1b37efdb.png" alt="safety-kit" class="product-card__img">
+                  </div>
+                  <h3 class="product-card__title">Safety Equipment Kit</h3>
+                  <p class="product-card__price">18.99 &euro;</p>
                   <p class="out-off-stock--text">out off stock</p>
                   <a href="#" class="notify-link"> <span>notify me</span> </a>
                   <button class="product-card__basket"></button>
@@ -368,12 +384,13 @@
               </div>
               <!-- 5 -->
               <div class="products-slider__item">
-                <div class="product-card center sale">
+                <div class="product-card center">
                   <a href="#" class="product-card__hover-link">view product</a>
                   <button class="product-card__favorite"></button>
-                  <img src="/life-jacket.41500bbf.png" alt="bagpack" class="product-card__img">
-                  <h3 class="product-card__title">Life Jacket BRP Men's Airflow PFD
-                  </h3>
+                  <div class="product-card__img-wrapper">
+                    <img src="/life-jacket.41500bbf.png" alt="lifejacket" class="product-card__img">
+                  </div>
+                  <h3 class="product-card__title">Life Jacket BRP Men's Airflow PFD</h3>
                   <p class="product-card__price">74.99 &euro;</p>
                   <p class="out-off-stock--text">out off stock</p>
                   <a href="#" class="notify-link"> <span>notify me</span> </a>
@@ -382,10 +399,12 @@
               </div>
               <!-- 6 -->
               <div class="products-slider__item">
-                <div class="product-card center out-off-stock">
+                <div class="product-card center  out-off-stock">
                   <a href="#" class="product-card__hover-link">view product</a>
                   <button class="product-card__favorite"></button>
-                  <img src="/equipment.1b37efdb.png" alt="bagpack" class="product-card__img">
+                  <div class="product-card__img-wrapper">
+                    <img src="/equipment.1b37efdb.png" alt="safety-kit" class="product-card__img">
+                  </div>
                   <h3 class="product-card__title">Safety Equipment Kit</h3>
                   <p class="product-card__price">18.99 &euro;</p>
                   <p class="out-off-stock--text">out off stock</p>
@@ -396,18 +415,19 @@
             </div>
           </div>
           <!-- Tires tab -->
-          <div class="products__tabs-content__item hide" id="tires">
-            <!-- Popular products slider -->
-            <div class="products-slider">
+          <div class="products__tabs-content__item tabs-item hide" id="tires">
+             <!--Products slider -->
+             <div class="products-slider">
               <!-- 1 -->
                 <div class="products-slider__item">
                   <div class="product-card center">
                     <a href="#" class="product-card__hover-link">view product</a>
                     <button class="product-card__favorite"></button>
-                    <img src="/bagpack.3215178a.png" alt="bagpack" class="product-card__img">
-                    <h3 class="product-card__title">Waterproof <br>
-                      Backpack</h3>
-                    <p class="product-card__price">104.99 &euro;</p>
+                    <div class="product-card__img-wrapper">
+                      <img src="/bagpack.3215178a.png" alt="bagpack" class="product-card__img">
+                    </div>
+                    <h3 class="product-card__title">Waterproof <br> Backpack</h3>
+                    <p class="product-card__price">105.99 &euro;</p>
                     <p class="out-off-stock--text">out off stock</p>
                     <a href="#" class="notify-link"> <span>notify me</span> </a>
                     <button class="product-card__basket"></button>
@@ -415,12 +435,13 @@
                 </div>
               <!-- 2 -->
                 <div class="products-slider__item">
-                  <div class="product-card center sale">
+                  <div class="product-card center">
                     <a href="#" class="product-card__hover-link">view product</a>
                     <button class="product-card__favorite"></button>
-                    <img src="/life-jacket.41500bbf.png" alt="bagpack" class="product-card__img">
-                    <h3 class="product-card__title">Life Jacket BRP Men's Airflow PFD
-                    </h3>
+                    <div class="product-card__img-wrapper">
+                      <img src="/life-jacket.41500bbf.png" alt="lifejacket" class="product-card__img">
+                    </div>
+                    <h3 class="product-card__title">Life Jacket BRP Men's Airflow PFD</h3>
                     <p class="product-card__price">74.99 &euro;</p>
                     <p class="out-off-stock--text">out off stock</p>
                     <a href="#" class="notify-link"> <span>notify me</span> </a>
@@ -432,9 +453,11 @@
                   <div class="product-card center">
                     <a href="#" class="product-card__hover-link">view product</a>
                     <button class="product-card__favorite"></button>
-                    <img src="/audio-system.bea0bc41.png" alt="bagpack" class="product-card__img">
+                    <div class="product-card__img-wrapper">
+                      <img src="/audio-system.bea0bc41.png" alt="audio-system" class="product-card__img">
+                    </div>
                     <h3 class="product-card__title">BRP Audio-Premium System</h3>
-                    <p class="product-card__price">734.99 &euro;</p>
+                    <p class="product-card__price">739.99 &euro;</p>
                     <p class="out-off-stock--text">out off stock</p>
                     <a href="#" class="notify-link"> <span>notify me</span> </a>
                     <button class="product-card__basket"></button>
@@ -442,12 +465,14 @@
               </div>
               <!-- 4 -->
               <div class="products-slider__item">
-                <div class="product-card center">
+                <div class="product-card center  out-off-stock">
                   <a href="#" class="product-card__hover-link">view product</a>
                   <button class="product-card__favorite"></button>
-                  <img src="/bagpack.3215178a.png" alt="bagpack" class="product-card__img">
-                  <h3 class="product-card__title">Waterproof <br> Backpack</h3>
-                  <p class="product-card__price">104.99 &euro;</p>
+                  <div class="product-card__img-wrapper">
+                    <img src="/equipment.1b37efdb.png" alt="safety-kit" class="product-card__img">
+                  </div>
+                  <h3 class="product-card__title">Safety Equipment Kit</h3>
+                  <p class="product-card__price">18.99 &euro;</p>
                   <p class="out-off-stock--text">out off stock</p>
                   <a href="#" class="notify-link"> <span>notify me</span> </a>
                   <button class="product-card__basket"></button>
@@ -455,12 +480,13 @@
               </div>
               <!-- 5 -->
               <div class="products-slider__item">
-                <div class="product-card center sale">
+                <div class="product-card center">
                   <a href="#" class="product-card__hover-link">view product</a>
                   <button class="product-card__favorite"></button>
-                  <img src="/life-jacket.41500bbf.png" alt="bagpack" class="product-card__img">
-                  <h3 class="product-card__title">Life Jacket BRP Men's Airflow PFD
-                  </h3>
+                  <div class="product-card__img-wrapper">
+                    <img src="/life-jacket.41500bbf.png" alt="lifejacket" class="product-card__img">
+                  </div>
+                  <h3 class="product-card__title">Life Jacket BRP Men's Airflow PFD</h3>
                   <p class="product-card__price">74.99 &euro;</p>
                   <p class="out-off-stock--text">out off stock</p>
                   <a href="#" class="notify-link"> <span>notify me</span> </a>
@@ -469,10 +495,12 @@
               </div>
               <!-- 6 -->
               <div class="products-slider__item">
-                <div class="product-card center out-off-stock">
+                <div class="product-card center  out-off-stock">
                   <a href="#" class="product-card__hover-link">view product</a>
                   <button class="product-card__favorite"></button>
-                  <img src="/equipment.1b37efdb.png" alt="bagpack" class="product-card__img">
+                  <div class="product-card__img-wrapper">
+                    <img src="/equipment.1b37efdb.png" alt="safety-kit" class="product-card__img">
+                  </div>
                   <h3 class="product-card__title">Safety Equipment Kit</h3>
                   <p class="product-card__price">18.99 &euro;</p>
                   <p class="out-off-stock--text">out off stock</p>
@@ -483,18 +511,19 @@
             </div>
           </div>
           <!-- Electronics tab -->
-          <div class="products__tabs-content__item hide" id="electronics">
-            <!-- Popular products slider -->
-            <div class="products-slider">
+          <div class="products__tabs-content__item tabs-item hide" id="electronics">
+             <!--Products slider -->
+             <div class="products-slider">
               <!-- 1 -->
                 <div class="products-slider__item">
-                  <div class="product-card center">
+                  <div class="product-card center out-off-stock">
                     <a href="#" class="product-card__hover-link">view product</a>
                     <button class="product-card__favorite"></button>
-                    <img src="/bagpack.3215178a.png" alt="bagpack" class="product-card__img">
-                    <h3 class="product-card__title">Waterproof <br>
-                      Backpack</h3>
-                    <p class="product-card__price">104.99 &euro;</p>
+                    <div class="product-card__img-wrapper">
+                      <img src="/speacker.032952a2.png" alt="bagpack" class="product-card__img">
+                    </div>
+                    <h3 class="product-card__title">BRP Audio-Portable System</h3>
+                    <p class="product-card__price">684.99 &euro;</p>
                     <p class="out-off-stock--text">out off stock</p>
                     <a href="#" class="notify-link"> <span>notify me</span> </a>
                     <button class="product-card__basket"></button>
@@ -502,13 +531,15 @@
                 </div>
               <!-- 2 -->
                 <div class="products-slider__item">
-                  <div class="product-card center sale">
+                  <div class="product-card center">
                     <a href="#" class="product-card__hover-link">view product</a>
                     <button class="product-card__favorite"></button>
-                    <img src="/life-jacket.41500bbf.png" alt="bagpack" class="product-card__img">
-                    <h3 class="product-card__title">Life Jacket BRP Men's Airflow PFD
+                    <div class="product-card__img-wrapper">
+                      <img src="/map.61497534.png" alt="bagpack" class="product-card__img">
+                    </div>
+                    <h3 class="product-card__title">Garmin Echomap Plus <br> 62cv
                     </h3>
-                    <p class="product-card__price">74.99 &euro;</p>
+                    <p class="product-card__price">613.99 &euro;</p>
                     <p class="out-off-stock--text">out off stock</p>
                     <a href="#" class="notify-link"> <span>notify me</span> </a>
                     <button class="product-card__basket"></button>
@@ -516,12 +547,14 @@
                 </div>
               <!-- 3 -->
               <div class="products-slider__item">
-                  <div class="product-card center">
+                  <div class="product-card center out-off-stock">
                     <a href="#" class="product-card__hover-link">view product</a>
                     <button class="product-card__favorite"></button>
-                    <img src="/audio-system.bea0bc41.png" alt="bagpack" class="product-card__img">
-                    <h3 class="product-card__title">BRP Audio-Premium System</h3>
-                    <p class="product-card__price">734.99 &euro;</p>
+                    <div class="product-card__img-wrapper">
+                      <img src="/key.1663a529.png" alt="key" class="product-card__img">
+                    </div>
+                    <h3 class="product-card__title">RF D.E.S.S.TM Key</h3>
+                    <p class="product-card__price">59.99 &euro;</p>
                     <p class="out-off-stock--text">out off stock</p>
                     <a href="#" class="notify-link"> <span>notify me</span> </a>
                     <button class="product-card__basket"></button>
@@ -532,8 +565,10 @@
                 <div class="product-card center">
                   <a href="#" class="product-card__hover-link">view product</a>
                   <button class="product-card__favorite"></button>
-                  <img src="/bagpack.3215178a.png" alt="bagpack" class="product-card__img">
-                  <h3 class="product-card__title">Waterproof <br> Backpack</h3>
+                  <div class="product-card__img-wrapper">
+                    <img src="/wetsuit.1f017009.png" alt="wetsuit" class="product-card__img">
+                  </div>
+                  <h3 class="product-card__title">Men's Escape Shorty Wetsuit</h3>
                   <p class="product-card__price">104.99 &euro;</p>
                   <p class="out-off-stock--text">out off stock</p>
                   <a href="#" class="notify-link"> <span>notify me</span> </a>
@@ -542,13 +577,15 @@
               </div>
               <!-- 5 -->
               <div class="products-slider__item">
-                <div class="product-card center sale">
+                <div class="product-card center">
                   <a href="#" class="product-card__hover-link">view product</a>
                   <button class="product-card__favorite"></button>
-                  <img src="/life-jacket.41500bbf.png" alt="bagpack" class="product-card__img">
-                  <h3 class="product-card__title">Life Jacket BRP Men's Airflow PFD
+                  <div class="product-card__img-wrapper">
+                    <img src="/map.61497534.png" alt="bagpack" class="product-card__img">
+                  </div>
+                  <h3 class="product-card__title">Garmin Echomap Plus <br> 62cv
                   </h3>
-                  <p class="product-card__price">74.99 &euro;</p>
+                  <p class="product-card__price">613.99 &euro;</p>
                   <p class="out-off-stock--text">out off stock</p>
                   <a href="#" class="notify-link"> <span>notify me</span> </a>
                   <button class="product-card__basket"></button>
@@ -559,9 +596,11 @@
                 <div class="product-card center out-off-stock">
                   <a href="#" class="product-card__hover-link">view product</a>
                   <button class="product-card__favorite"></button>
-                  <img src="/equipment.1b37efdb.png" alt="bagpack" class="product-card__img">
-                  <h3 class="product-card__title">Safety Equipment Kit</h3>
-                  <p class="product-card__price">18.99 &euro;</p>
+                  <div class="product-card__img-wrapper">
+                    <img src="/key.1663a529.png" alt="key" class="product-card__img">
+                  </div>
+                  <h3 class="product-card__title">RF D.E.S.S.TM Key</h3>
+                  <p class="product-card__price">59.99 &euro;</p>
                   <p class="out-off-stock--text">out off stock</p>
                   <a href="#" class="notify-link"> <span>notify me</span> </a>
                   <button class="product-card__basket"></button>
@@ -570,18 +609,19 @@
             </div>
           </div>
           <!-- Tools tab -->
-          <div class="products__tabs-content__item hide" id="tools">
-            <!-- Popular products slider -->
-            <div class="products-slider">
+          <div class="products__tabs-content__item tabs-item hide" id="tools">
+             <!--Products slider -->
+             <div class="products-slider">
               <!-- 1 -->
                 <div class="products-slider__item">
                   <div class="product-card center">
                     <a href="#" class="product-card__hover-link">view product</a>
                     <button class="product-card__favorite"></button>
-                    <img src="/bagpack.3215178a.png" alt="bagpack" class="product-card__img">
-                    <h3 class="product-card__title">Waterproof <br>
-                      Backpack</h3>
-                    <p class="product-card__price">104.99 &euro;</p>
+                    <div class="product-card__img-wrapper">
+                      <img src="/bagpack.3215178a.png" alt="bagpack" class="product-card__img">
+                    </div>
+                    <h3 class="product-card__title">Waterproof <br> Backpack</h3>
+                    <p class="product-card__price">105.99 &euro;</p>
                     <p class="out-off-stock--text">out off stock</p>
                     <a href="#" class="notify-link"> <span>notify me</span> </a>
                     <button class="product-card__basket"></button>
@@ -589,12 +629,13 @@
                 </div>
               <!-- 2 -->
                 <div class="products-slider__item">
-                  <div class="product-card center sale">
+                  <div class="product-card center">
                     <a href="#" class="product-card__hover-link">view product</a>
                     <button class="product-card__favorite"></button>
-                    <img src="/life-jacket.41500bbf.png" alt="bagpack" class="product-card__img">
-                    <h3 class="product-card__title">Life Jacket BRP Men's Airflow PFD
-                    </h3>
+                    <div class="product-card__img-wrapper">
+                      <img src="/life-jacket.41500bbf.png" alt="lifejacket" class="product-card__img">
+                    </div>
+                    <h3 class="product-card__title">Life Jacket BRP Men's Airflow PFD</h3>
                     <p class="product-card__price">74.99 &euro;</p>
                     <p class="out-off-stock--text">out off stock</p>
                     <a href="#" class="notify-link"> <span>notify me</span> </a>
@@ -606,9 +647,11 @@
                   <div class="product-card center">
                     <a href="#" class="product-card__hover-link">view product</a>
                     <button class="product-card__favorite"></button>
-                    <img src="/audio-system.bea0bc41.png" alt="bagpack" class="product-card__img">
+                    <div class="product-card__img-wrapper">
+                      <img src="/audio-system.bea0bc41.png" alt="audio-system" class="product-card__img">
+                    </div>
                     <h3 class="product-card__title">BRP Audio-Premium System</h3>
-                    <p class="product-card__price">734.99 &euro;</p>
+                    <p class="product-card__price">739.99 &euro;</p>
                     <p class="out-off-stock--text">out off stock</p>
                     <a href="#" class="notify-link"> <span>notify me</span> </a>
                     <button class="product-card__basket"></button>
@@ -616,12 +659,14 @@
               </div>
               <!-- 4 -->
               <div class="products-slider__item">
-                <div class="product-card center">
+                <div class="product-card center  out-off-stock">
                   <a href="#" class="product-card__hover-link">view product</a>
                   <button class="product-card__favorite"></button>
-                  <img src="/bagpack.3215178a.png" alt="bagpack" class="product-card__img">
-                  <h3 class="product-card__title">Waterproof <br> Backpack</h3>
-                  <p class="product-card__price">104.99 &euro;</p>
+                  <div class="product-card__img-wrapper">
+                    <img src="/equipment.1b37efdb.png" alt="safety-kit" class="product-card__img">
+                  </div>
+                  <h3 class="product-card__title">Safety Equipment Kit</h3>
+                  <p class="product-card__price">18.99 &euro;</p>
                   <p class="out-off-stock--text">out off stock</p>
                   <a href="#" class="notify-link"> <span>notify me</span> </a>
                   <button class="product-card__basket"></button>
@@ -629,12 +674,13 @@
               </div>
               <!-- 5 -->
               <div class="products-slider__item">
-                <div class="product-card center sale">
+                <div class="product-card center">
                   <a href="#" class="product-card__hover-link">view product</a>
                   <button class="product-card__favorite"></button>
-                  <img src="/life-jacket.41500bbf.png" alt="bagpack" class="product-card__img">
-                  <h3 class="product-card__title">Life Jacket BRP Men's Airflow PFD
-                  </h3>
+                  <div class="product-card__img-wrapper">
+                    <img src="/life-jacket.41500bbf.png" alt="lifejacket" class="product-card__img">
+                  </div>
+                  <h3 class="product-card__title">Life Jacket BRP Men's Airflow PFD</h3>
                   <p class="product-card__price">74.99 &euro;</p>
                   <p class="out-off-stock--text">out off stock</p>
                   <a href="#" class="notify-link"> <span>notify me</span> </a>
@@ -643,10 +689,12 @@
               </div>
               <!-- 6 -->
               <div class="products-slider__item">
-                <div class="product-card center out-off-stock">
+                <div class="product-card center  out-off-stock">
                   <a href="#" class="product-card__hover-link">view product</a>
                   <button class="product-card__favorite"></button>
-                  <img src="/equipment.1b37efdb.png" alt="bagpack" class="product-card__img">
+                  <div class="product-card__img-wrapper">
+                    <img src="/equipment.1b37efdb.png" alt="safety-kit" class="product-card__img">
+                  </div>
                   <h3 class="product-card__title">Safety Equipment Kit</h3>
                   <p class="product-card__price">18.99 &euro;</p>
                   <p class="out-off-stock--text">out off stock</p>
@@ -657,18 +705,19 @@
             </div>
           </div>
           <!-- Accessories tab -->
-          <div class="products__tabs-content__item hide" id="accessories">
-            <!-- Popular products slider -->
+          <div class="products__tabs-content__item tabs-item hide" id="accessories">
+            <!--Products slider -->
             <div class="products-slider">
               <!-- 1 -->
                 <div class="products-slider__item">
                   <div class="product-card center">
                     <a href="#" class="product-card__hover-link">view product</a>
                     <button class="product-card__favorite"></button>
-                    <img src="/bagpack.3215178a.png" alt="bagpack" class="product-card__img">
-                    <h3 class="product-card__title">Waterproof <br>
-                      Backpack</h3>
-                    <p class="product-card__price">104.99 &euro;</p>
+                    <div class="product-card__img-wrapper">
+                      <img src="/bagpack.3215178a.png" alt="bagpack" class="product-card__img">
+                    </div>
+                    <h3 class="product-card__title">Waterproof <br> Backpack</h3>
+                    <p class="product-card__price">105.99 &euro;</p>
                     <p class="out-off-stock--text">out off stock</p>
                     <a href="#" class="notify-link"> <span>notify me</span> </a>
                     <button class="product-card__basket"></button>
@@ -676,12 +725,13 @@
                 </div>
               <!-- 2 -->
                 <div class="products-slider__item">
-                  <div class="product-card center sale">
+                  <div class="product-card center">
                     <a href="#" class="product-card__hover-link">view product</a>
                     <button class="product-card__favorite"></button>
-                    <img src="/life-jacket.41500bbf.png" alt="bagpack" class="product-card__img">
-                    <h3 class="product-card__title">Life Jacket BRP Men's Airflow PFD
-                    </h3>
+                    <div class="product-card__img-wrapper">
+                      <img src="/life-jacket.41500bbf.png" alt="lifejacket" class="product-card__img">
+                    </div>
+                    <h3 class="product-card__title">Life Jacket BRP Men's Airflow PFD</h3>
                     <p class="product-card__price">74.99 &euro;</p>
                     <p class="out-off-stock--text">out off stock</p>
                     <a href="#" class="notify-link"> <span>notify me</span> </a>
@@ -693,9 +743,11 @@
                   <div class="product-card center">
                     <a href="#" class="product-card__hover-link">view product</a>
                     <button class="product-card__favorite"></button>
-                    <img src="/audio-system.bea0bc41.png" alt="bagpack" class="product-card__img">
+                    <div class="product-card__img-wrapper">
+                      <img src="/audio-system.bea0bc41.png" alt="audio-system" class="product-card__img">
+                    </div>
                     <h3 class="product-card__title">BRP Audio-Premium System</h3>
-                    <p class="product-card__price">734.99 &euro;</p>
+                    <p class="product-card__price">739.99 &euro;</p>
                     <p class="out-off-stock--text">out off stock</p>
                     <a href="#" class="notify-link"> <span>notify me</span> </a>
                     <button class="product-card__basket"></button>
@@ -703,12 +755,14 @@
               </div>
               <!-- 4 -->
               <div class="products-slider__item">
-                <div class="product-card center">
+                <div class="product-card center  out-off-stock">
                   <a href="#" class="product-card__hover-link">view product</a>
                   <button class="product-card__favorite"></button>
-                  <img src="/bagpack.3215178a.png" alt="bagpack" class="product-card__img">
-                  <h3 class="product-card__title">Waterproof <br> Backpack</h3>
-                  <p class="product-card__price">104.99 &euro;</p>
+                  <div class="product-card__img-wrapper">
+                    <img src="/equipment.1b37efdb.png" alt="safety-kit" class="product-card__img">
+                  </div>
+                  <h3 class="product-card__title">Safety Equipment Kit</h3>
+                  <p class="product-card__price">18.99 &euro;</p>
                   <p class="out-off-stock--text">out off stock</p>
                   <a href="#" class="notify-link"> <span>notify me</span> </a>
                   <button class="product-card__basket"></button>
@@ -716,12 +770,13 @@
               </div>
               <!-- 5 -->
               <div class="products-slider__item">
-                <div class="product-card center sale">
+                <div class="product-card center">
                   <a href="#" class="product-card__hover-link">view product</a>
                   <button class="product-card__favorite"></button>
-                  <img src="/life-jacket.41500bbf.png" alt="bagpack" class="product-card__img">
-                  <h3 class="product-card__title">Life Jacket BRP Men's Airflow PFD
-                  </h3>
+                  <div class="product-card__img-wrapper">
+                    <img src="/life-jacket.41500bbf.png" alt="lifejacket" class="product-card__img">
+                  </div>
+                  <h3 class="product-card__title">Life Jacket BRP Men's Airflow PFD</h3>
                   <p class="product-card__price">74.99 &euro;</p>
                   <p class="out-off-stock--text">out off stock</p>
                   <a href="#" class="notify-link"> <span>notify me</span> </a>
@@ -730,10 +785,12 @@
               </div>
               <!-- 6 -->
               <div class="products-slider__item">
-                <div class="product-card center out-off-stock">
+                <div class="product-card center  out-off-stock">
                   <a href="#" class="product-card__hover-link">view product</a>
                   <button class="product-card__favorite"></button>
-                  <img src="/equipment.1b37efdb.png" alt="bagpack" class="product-card__img">
+                  <div class="product-card__img-wrapper">
+                    <img src="/equipment.1b37efdb.png" alt="safety-kit" class="product-card__img">
+                  </div>
                   <h3 class="product-card__title">Safety Equipment Kit</h3>
                   <p class="product-card__price">18.99 &euro;</p>
                   <p class="out-off-stock--text">out off stock</p>
@@ -748,6 +805,665 @@
       <div class="center"><a href="#" class="products__show-more__btn">show more</a></div>
     </div>
   </section>
+  <!-- Banner -->
+  <div class="container">
+    <div class="banner flex">
+      <div class="banner__img">
+        <img src="/quad-left.c4e90f99.png" alt="quad-right">
+        <img src="/quad-right.90bea9fe.png" alt="quad-left">
+      </div>
+        <h2 class="banner__text">SALE spare parts up to 70% off</h2>
+      <div class="banner__btn">
+        <a href="#">VIEW ALL</a>
+      </div>
+    </div>
+  </div>
+  <!-- Related products -->
+  <section class="products">
+    <div class="container">
+      <h2 class="products-title">With this item buy</h2>
+      <div class="products__tabs">
+        <div class="products__tabs-menu flex">
+          <a href="#related-parts" class="products__tabs-link tabs-link">spare parts</a>
+          <a href="#related-motors" class="products__tabs-link tabs-link">motors</a>
+          <a href="#related-tires" class="products__tabs-link tabs-link">tires</a>
+          <a href="#related-electronics" class="products__tabs-link tabs-link tabs-link--active">electronics</a>
+          <a href="#related-tools" class="products__tabs-link tabs-link">tools</a>
+          <a href="#related-accessories" class="products__tabs-link tabs-link">accessories</a>
+        </div>
+        <div class="products__tabs-content">
+          <!-- Spare parts tab -->
+          <div class="products__tabs-content__item tabs-item hide  active" id="related-parts">
+            <!--Products slider -->
+            <div class="products-slider">
+              <!-- 1 -->
+                <div class="products-slider__item">
+                  <div class="product-card center out-off-stock">
+                    <a href="#" class="product-card__hover-link">view product</a>
+                    <button class="product-card__favorite"></button>
+                    <div class="product-card__img-wrapper">
+                      <img src="/speacker.032952a2.png" alt="bagpack" class="product-card__img">
+                    </div>
+                    <h3 class="product-card__title">BRP Audio-Portable System</h3>
+                    <p class="product-card__price">684.99 &euro;</p>
+                    <p class="out-off-stock--text">out off stock</p>
+                    <a href="#" class="notify-link"> <span>notify me</span> </a>
+                    <button class="product-card__basket"></button>
+                  </div>
+                </div>
+              <!-- 2 -->
+                <div class="products-slider__item">
+                  <div class="product-card center">
+                    <a href="#" class="product-card__hover-link">view product</a>
+                    <button class="product-card__favorite"></button>
+                    <div class="product-card__img-wrapper">
+                      <img src="/map.61497534.png" alt="bagpack" class="product-card__img">
+                    </div>
+                    <h3 class="product-card__title">Garmin Echomap Plus <br> 62cv
+                    </h3>
+                    <p class="product-card__price">613.99 &euro;</p>
+                    <p class="out-off-stock--text">out off stock</p>
+                    <a href="#" class="notify-link"> <span>notify me</span> </a>
+                    <button class="product-card__basket"></button>
+                  </div>
+                </div>
+              <!-- 3 -->
+              <div class="products-slider__item">
+                  <div class="product-card center out-off-stock">
+                    <a href="#" class="product-card__hover-link">view product</a>
+                    <button class="product-card__favorite"></button>
+                    <div class="product-card__img-wrapper">
+                      <img src="/key.1663a529.png" alt="key" class="product-card__img">
+                    </div>
+                    <h3 class="product-card__title">RF D.E.S.S.TM Key</h3>
+                    <p class="product-card__price">59.99 &euro;</p>
+                    <p class="out-off-stock--text">out off stock</p>
+                    <a href="#" class="notify-link"> <span>notify me</span> </a>
+                    <button class="product-card__basket"></button>
+                  </div>
+              </div>
+              <!-- 4 -->
+              <div class="products-slider__item">
+                <div class="product-card center">
+                  <a href="#" class="product-card__hover-link">view product</a>
+                  <button class="product-card__favorite"></button>
+                  <div class="product-card__img-wrapper">
+                    <img src="/wetsuit.1f017009.png" alt="wetsuit" class="product-card__img">
+                  </div>
+                  <h3 class="product-card__title">Men's Escape Shorty Wetsuit</h3>
+                  <p class="product-card__price">104.99 &euro;</p>
+                  <p class="out-off-stock--text">out off stock</p>
+                  <a href="#" class="notify-link"> <span>notify me</span> </a>
+                  <button class="product-card__basket"></button>
+                </div>
+              </div>
+              <!-- 5 -->
+              <div class="products-slider__item">
+                <div class="product-card center">
+                  <a href="#" class="product-card__hover-link">view product</a>
+                  <button class="product-card__favorite"></button>
+                  <div class="product-card__img-wrapper">
+                    <img src="/map.61497534.png" alt="bagpack" class="product-card__img">
+                  </div>
+                  <h3 class="product-card__title">Garmin Echomap Plus <br> 62cv
+                  </h3>
+                  <p class="product-card__price">613.99 &euro;</p>
+                  <p class="out-off-stock--text">out off stock</p>
+                  <a href="#" class="notify-link"> <span>notify me</span> </a>
+                  <button class="product-card__basket"></button>
+                </div>
+              </div>
+              <!-- 6 -->
+              <div class="products-slider__item">
+                <div class="product-card center out-off-stock">
+                  <a href="#" class="product-card__hover-link">view product</a>
+                  <button class="product-card__favorite"></button>
+                  <div class="product-card__img-wrapper">
+                    <img src="/key.1663a529.png" alt="key" class="product-card__img">
+                  </div>
+                  <h3 class="product-card__title">RF D.E.S.S.TM Key</h3>
+                  <p class="product-card__price">59.99 &euro;</p>
+                  <p class="out-off-stock--text">out off stock</p>
+                  <a href="#" class="notify-link"> <span>notify me</span> </a>
+                  <button class="product-card__basket"></button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Motors tab -->
+          <div class="products__tabs-content__item tabs-item hide" id="related-motors">
+            <!--Products slider -->
+            <div class="products-slider">
+              <!-- 1 -->
+                <div class="products-slider__item">
+                  <div class="product-card center out-off-stock">
+                    <a href="#" class="product-card__hover-link">view product</a>
+                    <button class="product-card__favorite"></button>
+                    <div class="product-card__img-wrapper">
+                      <img src="/speacker.032952a2.png" alt="bagpack" class="product-card__img">
+                    </div>
+                    <h3 class="product-card__title">BRP Audio-Portable System</h3>
+                    <p class="product-card__price">684.99 &euro;</p>
+                    <p class="out-off-stock--text">out off stock</p>
+                    <a href="#" class="notify-link"> <span>notify me</span> </a>
+                    <button class="product-card__basket"></button>
+                  </div>
+                </div>
+              <!-- 2 -->
+                <div class="products-slider__item">
+                  <div class="product-card center">
+                    <a href="#" class="product-card__hover-link">view product</a>
+                    <button class="product-card__favorite"></button>
+                    <div class="product-card__img-wrapper">
+                      <img src="/map.61497534.png" alt="bagpack" class="product-card__img">
+                    </div>
+                    <h3 class="product-card__title">Garmin Echomap Plus <br> 62cv
+                    </h3>
+                    <p class="product-card__price">613.99 &euro;</p>
+                    <p class="out-off-stock--text">out off stock</p>
+                    <a href="#" class="notify-link"> <span>notify me</span> </a>
+                    <button class="product-card__basket"></button>
+                  </div>
+                </div>
+              <!-- 3 -->
+              <div class="products-slider__item">
+                  <div class="product-card center out-off-stock">
+                    <a href="#" class="product-card__hover-link">view product</a>
+                    <button class="product-card__favorite"></button>
+                    <div class="product-card__img-wrapper">
+                      <img src="/key.1663a529.png" alt="key" class="product-card__img">
+                    </div>
+                    <h3 class="product-card__title">RF D.E.S.S.TM Key</h3>
+                    <p class="product-card__price">59.99 &euro;</p>
+                    <p class="out-off-stock--text">out off stock</p>
+                    <a href="#" class="notify-link"> <span>notify me</span> </a>
+                    <button class="product-card__basket"></button>
+                  </div>
+              </div>
+              <!-- 4 -->
+              <div class="products-slider__item">
+                <div class="product-card center">
+                  <a href="#" class="product-card__hover-link">view product</a>
+                  <button class="product-card__favorite"></button>
+                  <div class="product-card__img-wrapper">
+                    <img src="/wetsuit.1f017009.png" alt="wetsuit" class="product-card__img">
+                  </div>
+                  <h3 class="product-card__title">Men's Escape Shorty Wetsuit</h3>
+                  <p class="product-card__price">104.99 &euro;</p>
+                  <p class="out-off-stock--text">out off stock</p>
+                  <a href="#" class="notify-link"> <span>notify me</span> </a>
+                  <button class="product-card__basket"></button>
+                </div>
+              </div>
+              <!-- 5 -->
+              <div class="products-slider__item">
+                <div class="product-card center">
+                  <a href="#" class="product-card__hover-link">view product</a>
+                  <button class="product-card__favorite"></button>
+                  <div class="product-card__img-wrapper">
+                    <img src="/map.61497534.png" alt="bagpack" class="product-card__img">
+                  </div>
+                  <h3 class="product-card__title">Garmin Echomap Plus <br> 62cv
+                  </h3>
+                  <p class="product-card__price">613.99 &euro;</p>
+                  <p class="out-off-stock--text">out off stock</p>
+                  <a href="#" class="notify-link"> <span>notify me</span> </a>
+                  <button class="product-card__basket"></button>
+                </div>
+              </div>
+              <!-- 6 -->
+              <div class="products-slider__item">
+                <div class="product-card center out-off-stock">
+                  <a href="#" class="product-card__hover-link">view product</a>
+                  <button class="product-card__favorite"></button>
+                  <div class="product-card__img-wrapper">
+                    <img src="/key.1663a529.png" alt="key" class="product-card__img">
+                  </div>
+                  <h3 class="product-card__title">RF D.E.S.S.TM Key</h3>
+                  <p class="product-card__price">59.99 &euro;</p>
+                  <p class="out-off-stock--text">out off stock</p>
+                  <a href="#" class="notify-link"> <span>notify me</span> </a>
+                  <button class="product-card__basket"></button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Tires tab -->
+          <div class="products__tabs-content__item tabs-item hide" id="related-tires">
+            <!--Products slider -->
+            <div class="products-slider">
+              <!-- 1 -->
+                <div class="products-slider__item">
+                  <div class="product-card center out-off-stock">
+                    <a href="#" class="product-card__hover-link">view product</a>
+                    <button class="product-card__favorite"></button>
+                    <div class="product-card__img-wrapper">
+                      <img src="/speacker.032952a2.png" alt="bagpack" class="product-card__img">
+                    </div>
+                    <h3 class="product-card__title">BRP Audio-Portable System</h3>
+                    <p class="product-card__price">684.99 &euro;</p>
+                    <p class="out-off-stock--text">out off stock</p>
+                    <a href="#" class="notify-link"> <span>notify me</span> </a>
+                    <button class="product-card__basket"></button>
+                  </div>
+                </div>
+              <!-- 2 -->
+                <div class="products-slider__item">
+                  <div class="product-card center">
+                    <a href="#" class="product-card__hover-link">view product</a>
+                    <button class="product-card__favorite"></button>
+                    <div class="product-card__img-wrapper">
+                      <img src="/map.61497534.png" alt="bagpack" class="product-card__img">
+                    </div>
+                    <h3 class="product-card__title">Garmin Echomap Plus <br> 62cv
+                    </h3>
+                    <p class="product-card__price">613.99 &euro;</p>
+                    <p class="out-off-stock--text">out off stock</p>
+                    <a href="#" class="notify-link"> <span>notify me</span> </a>
+                    <button class="product-card__basket"></button>
+                  </div>
+                </div>
+              <!-- 3 -->
+              <div class="products-slider__item">
+                  <div class="product-card center out-off-stock">
+                    <a href="#" class="product-card__hover-link">view product</a>
+                    <button class="product-card__favorite"></button>
+                    <div class="product-card__img-wrapper">
+                      <img src="/key.1663a529.png" alt="key" class="product-card__img">
+                    </div>
+                    <h3 class="product-card__title">RF D.E.S.S.TM Key</h3>
+                    <p class="product-card__price">59.99 &euro;</p>
+                    <p class="out-off-stock--text">out off stock</p>
+                    <a href="#" class="notify-link"> <span>notify me</span> </a>
+                    <button class="product-card__basket"></button>
+                  </div>
+              </div>
+              <!-- 4 -->
+              <div class="products-slider__item">
+                <div class="product-card center">
+                  <a href="#" class="product-card__hover-link">view product</a>
+                  <button class="product-card__favorite"></button>
+                  <div class="product-card__img-wrapper">
+                    <img src="/wetsuit.1f017009.png" alt="wetsuit" class="product-card__img">
+                  </div>
+                  <h3 class="product-card__title">Men's Escape Shorty Wetsuit</h3>
+                  <p class="product-card__price">104.99 &euro;</p>
+                  <p class="out-off-stock--text">out off stock</p>
+                  <a href="#" class="notify-link"> <span>notify me</span> </a>
+                  <button class="product-card__basket"></button>
+                </div>
+              </div>
+              <!-- 5 -->
+              <div class="products-slider__item">
+                <div class="product-card center">
+                  <a href="#" class="product-card__hover-link">view product</a>
+                  <button class="product-card__favorite"></button>
+                  <div class="product-card__img-wrapper">
+                    <img src="/map.61497534.png" alt="bagpack" class="product-card__img">
+                  </div>
+                  <h3 class="product-card__title">Garmin Echomap Plus <br> 62cv
+                  </h3>
+                  <p class="product-card__price">613.99 &euro;</p>
+                  <p class="out-off-stock--text">out off stock</p>
+                  <a href="#" class="notify-link"> <span>notify me</span> </a>
+                  <button class="product-card__basket"></button>
+                </div>
+              </div>
+              <!-- 6 -->
+              <div class="products-slider__item">
+                <div class="product-card center out-off-stock">
+                  <a href="#" class="product-card__hover-link">view product</a>
+                  <button class="product-card__favorite"></button>
+                  <div class="product-card__img-wrapper">
+                    <img src="/key.1663a529.png" alt="key" class="product-card__img">
+                  </div>
+                  <h3 class="product-card__title">RF D.E.S.S.TM Key</h3>
+                  <p class="product-card__price">59.99 &euro;</p>
+                  <p class="out-off-stock--text">out off stock</p>
+                  <a href="#" class="notify-link"> <span>notify me</span> </a>
+                  <button class="product-card__basket"></button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Electronics tab -->
+          <div class="products__tabs-content__item tabs-item hide" id="related-electronics">
+            <!--Products slider -->
+            <div class="products-slider">
+              <!-- 1 -->
+                <div class="products-slider__item">
+                  <div class="product-card center out-off-stock">
+                    <a href="#" class="product-card__hover-link">view product</a>
+                    <button class="product-card__favorite"></button>
+                    <div class="product-card__img-wrapper">
+                      <img src="/speacker.032952a2.png" alt="bagpack" class="product-card__img">
+                    </div>
+                    <h3 class="product-card__title">BRP Audio-Portable System</h3>
+                    <p class="product-card__price">684.99 &euro;</p>
+                    <p class="out-off-stock--text">out off stock</p>
+                    <a href="#" class="notify-link"> <span>notify me</span> </a>
+                    <button class="product-card__basket"></button>
+                  </div>
+                </div>
+              <!-- 2 -->
+                <div class="products-slider__item">
+                  <div class="product-card center">
+                    <a href="#" class="product-card__hover-link">view product</a>
+                    <button class="product-card__favorite"></button>
+                    <div class="product-card__img-wrapper">
+                      <img src="/map.61497534.png" alt="bagpack" class="product-card__img">
+                    </div>
+                    <h3 class="product-card__title">Garmin Echomap Plus <br> 62cv
+                    </h3>
+                    <p class="product-card__price">613.99 &euro;</p>
+                    <p class="out-off-stock--text">out off stock</p>
+                    <a href="#" class="notify-link"> <span>notify me</span> </a>
+                    <button class="product-card__basket"></button>
+                  </div>
+                </div>
+              <!-- 3 -->
+              <div class="products-slider__item">
+                  <div class="product-card center out-off-stock">
+                    <a href="#" class="product-card__hover-link">view product</a>
+                    <button class="product-card__favorite"></button>
+                    <div class="product-card__img-wrapper">
+                      <img src="/key.1663a529.png" alt="key" class="product-card__img">
+                    </div>
+                    <h3 class="product-card__title">RF D.E.S.S.TM Key</h3>
+                    <p class="product-card__price">59.99 &euro;</p>
+                    <p class="out-off-stock--text">out off stock</p>
+                    <a href="#" class="notify-link"> <span>notify me</span> </a>
+                    <button class="product-card__basket"></button>
+                  </div>
+              </div>
+              <!-- 4 -->
+              <div class="products-slider__item">
+                <div class="product-card center">
+                  <a href="#" class="product-card__hover-link">view product</a>
+                  <button class="product-card__favorite"></button>
+                  <div class="product-card__img-wrapper">
+                    <img src="/wetsuit.1f017009.png" alt="wetsuit" class="product-card__img">
+                  </div>
+                  <h3 class="product-card__title">Men's Escape Shorty Wetsuit</h3>
+                  <p class="product-card__price">104.99 &euro;</p>
+                  <p class="out-off-stock--text">out off stock</p>
+                  <a href="#" class="notify-link"> <span>notify me</span> </a>
+                  <button class="product-card__basket"></button>
+                </div>
+              </div>
+              <!-- 5 -->
+              <div class="products-slider__item">
+                <div class="product-card center">
+                  <a href="#" class="product-card__hover-link">view product</a>
+                  <button class="product-card__favorite"></button>
+                  <div class="product-card__img-wrapper">
+                    <img src="/map.61497534.png" alt="bagpack" class="product-card__img">
+                  </div>
+                  <h3 class="product-card__title">Garmin Echomap Plus <br> 62cv
+                  </h3>
+                  <p class="product-card__price">613.99 &euro;</p>
+                  <p class="out-off-stock--text">out off stock</p>
+                  <a href="#" class="notify-link"> <span>notify me</span> </a>
+                  <button class="product-card__basket"></button>
+                </div>
+              </div>
+              <!-- 6 -->
+              <div class="products-slider__item">
+                <div class="product-card center out-off-stock">
+                  <a href="#" class="product-card__hover-link">view product</a>
+                  <button class="product-card__favorite"></button>
+                  <div class="product-card__img-wrapper">
+                    <img src="/key.1663a529.png" alt="key" class="product-card__img">
+                  </div>
+                  <h3 class="product-card__title">RF D.E.S.S.TM Key</h3>
+                  <p class="product-card__price">59.99 &euro;</p>
+                  <p class="out-off-stock--text">out off stock</p>
+                  <a href="#" class="notify-link"> <span>notify me</span> </a>
+                  <button class="product-card__basket"></button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Tools tab -->
+          <div class="products__tabs-content__item tabs-item hide" id="related-tools">
+            <!--Products slider -->
+            <div class="products-slider">
+              <!-- 1 -->
+                <div class="products-slider__item">
+                  <div class="product-card center out-off-stock">
+                    <a href="#" class="product-card__hover-link">view product</a>
+                    <button class="product-card__favorite"></button>
+                    <div class="product-card__img-wrapper">
+                      <img src="/speacker.032952a2.png" alt="bagpack" class="product-card__img">
+                    </div>
+                    <h3 class="product-card__title">BRP Audio-Portable System</h3>
+                    <p class="product-card__price">684.99 &euro;</p>
+                    <p class="out-off-stock--text">out off stock</p>
+                    <a href="#" class="notify-link"> <span>notify me</span> </a>
+                    <button class="product-card__basket"></button>
+                  </div>
+                </div>
+              <!-- 2 -->
+                <div class="products-slider__item">
+                  <div class="product-card center">
+                    <a href="#" class="product-card__hover-link">view product</a>
+                    <button class="product-card__favorite"></button>
+                    <div class="product-card__img-wrapper">
+                      <img src="/map.61497534.png" alt="bagpack" class="product-card__img">
+                    </div>
+                    <h3 class="product-card__title">Garmin Echomap Plus <br> 62cv
+                    </h3>
+                    <p class="product-card__price">613.99 &euro;</p>
+                    <p class="out-off-stock--text">out off stock</p>
+                    <a href="#" class="notify-link"> <span>notify me</span> </a>
+                    <button class="product-card__basket"></button>
+                  </div>
+                </div>
+              <!-- 3 -->
+              <div class="products-slider__item">
+                  <div class="product-card center out-off-stock">
+                    <a href="#" class="product-card__hover-link">view product</a>
+                    <button class="product-card__favorite"></button>
+                    <div class="product-card__img-wrapper">
+                      <img src="/key.1663a529.png" alt="key" class="product-card__img">
+                    </div>
+                    <h3 class="product-card__title">RF D.E.S.S.TM Key</h3>
+                    <p class="product-card__price">59.99 &euro;</p>
+                    <p class="out-off-stock--text">out off stock</p>
+                    <a href="#" class="notify-link"> <span>notify me</span> </a>
+                    <button class="product-card__basket"></button>
+                  </div>
+              </div>
+              <!-- 4 -->
+              <div class="products-slider__item">
+                <div class="product-card center">
+                  <a href="#" class="product-card__hover-link">view product</a>
+                  <button class="product-card__favorite"></button>
+                  <div class="product-card__img-wrapper">
+                    <img src="/wetsuit.1f017009.png" alt="wetsuit" class="product-card__img">
+                  </div>
+                  <h3 class="product-card__title">Men's Escape Shorty Wetsuit</h3>
+                  <p class="product-card__price">104.99 &euro;</p>
+                  <p class="out-off-stock--text">out off stock</p>
+                  <a href="#" class="notify-link"> <span>notify me</span> </a>
+                  <button class="product-card__basket"></button>
+                </div>
+              </div>
+              <!-- 5 -->
+              <div class="products-slider__item">
+                <div class="product-card center">
+                  <a href="#" class="product-card__hover-link">view product</a>
+                  <button class="product-card__favorite"></button>
+                  <div class="product-card__img-wrapper">
+                    <img src="/map.61497534.png" alt="bagpack" class="product-card__img">
+                  </div>
+                  <h3 class="product-card__title">Garmin Echomap Plus <br> 62cv
+                  </h3>
+                  <p class="product-card__price">613.99 &euro;</p>
+                  <p class="out-off-stock--text">out off stock</p>
+                  <a href="#" class="notify-link"> <span>notify me</span> </a>
+                  <button class="product-card__basket"></button>
+                </div>
+              </div>
+              <!-- 6 -->
+              <div class="products-slider__item">
+                <div class="product-card center out-off-stock">
+                  <a href="#" class="product-card__hover-link">view product</a>
+                  <button class="product-card__favorite"></button>
+                  <div class="product-card__img-wrapper">
+                    <img src="/key.1663a529.png" alt="key" class="product-card__img">
+                  </div>
+                  <h3 class="product-card__title">RF D.E.S.S.TM Key</h3>
+                  <p class="product-card__price">59.99 &euro;</p>
+                  <p class="out-off-stock--text">out off stock</p>
+                  <a href="#" class="notify-link"> <span>notify me</span> </a>
+                  <button class="product-card__basket"></button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Accessories  tab -->
+          <div class="products__tabs-content__item tabs-item hide" id="related-accessories">
+            <!--Products slider -->
+            <div class="products-slider">
+              <!-- 1 -->
+                <div class="products-slider__item">
+                  <div class="product-card center out-off-stock">
+                    <a href="#" class="product-card__hover-link">view product</a>
+                    <button class="product-card__favorite"></button>
+                    <div class="product-card__img-wrapper">
+                      <img src="/speacker.032952a2.png" alt="bagpack" class="product-card__img">
+                    </div>
+                    <h3 class="product-card__title">BRP Audio-Portable System</h3>
+                    <p class="product-card__price">684.99 &euro;</p>
+                    <p class="out-off-stock--text">out off stock</p>
+                    <a href="#" class="notify-link"> <span>notify me</span> </a>
+                    <button class="product-card__basket"></button>
+                  </div>
+                </div>
+              <!-- 2 -->
+                <div class="products-slider__item">
+                  <div class="product-card center">
+                    <a href="#" class="product-card__hover-link">view product</a>
+                    <button class="product-card__favorite"></button>
+                    <div class="product-card__img-wrapper">
+                      <img src="/map.61497534.png" alt="bagpack" class="product-card__img">
+                    </div>
+                    <h3 class="product-card__title">Garmin Echomap Plus <br> 62cv
+                    </h3>
+                    <p class="product-card__price">613.99 &euro;</p>
+                    <p class="out-off-stock--text">out off stock</p>
+                    <a href="#" class="notify-link"> <span>notify me</span> </a>
+                    <button class="product-card__basket"></button>
+                  </div>
+                </div>
+              <!-- 3 -->
+              <div class="products-slider__item">
+                  <div class="product-card center out-off-stock">
+                    <a href="#" class="product-card__hover-link">view product</a>
+                    <button class="product-card__favorite"></button>
+                    <div class="product-card__img-wrapper">
+                      <img src="/key.1663a529.png" alt="key" class="product-card__img">
+                    </div>
+                    <h3 class="product-card__title">RF D.E.S.S.TM Key</h3>
+                    <p class="product-card__price">59.99 &euro;</p>
+                    <p class="out-off-stock--text">out off stock</p>
+                    <a href="#" class="notify-link"> <span>notify me</span> </a>
+                    <button class="product-card__basket"></button>
+                  </div>
+              </div>
+              <!-- 4 -->
+              <div class="products-slider__item">
+                <div class="product-card center">
+                  <a href="#" class="product-card__hover-link">view product</a>
+                  <button class="product-card__favorite"></button>
+                  <div class="product-card__img-wrapper">
+                    <img src="/wetsuit.1f017009.png" alt="wetsuit" class="product-card__img">
+                  </div>
+                  <h3 class="product-card__title">Men's Escape Shorty Wetsuit</h3>
+                  <p class="product-card__price">104.99 &euro;</p>
+                  <p class="out-off-stock--text">out off stock</p>
+                  <a href="#" class="notify-link"> <span>notify me</span> </a>
+                  <button class="product-card__basket"></button>
+                </div>
+              </div>
+              <!-- 5 -->
+              <div class="products-slider__item">
+                <div class="product-card center">
+                  <a href="#" class="product-card__hover-link">view product</a>
+                  <button class="product-card__favorite"></button>
+                  <div class="product-card__img-wrapper">
+                    <img src="/map.61497534.png" alt="bagpack" class="product-card__img">
+                  </div>
+                  <h3 class="product-card__title">Garmin Echomap Plus <br> 62cv
+                  </h3>
+                  <p class="product-card__price">613.99 &euro;</p>
+                  <p class="out-off-stock--text">out off stock</p>
+                  <a href="#" class="notify-link"> <span>notify me</span> </a>
+                  <button class="product-card__basket"></button>
+                </div>
+              </div>
+              <!-- 6 -->
+              <div class="products-slider__item">
+                <div class="product-card center out-off-stock">
+                  <a href="#" class="product-card__hover-link">view product</a>
+                  <button class="product-card__favorite"></button>
+                  <div class="product-card__img-wrapper">
+                    <img src="/key.1663a529.png" alt="key" class="product-card__img">
+                  </div>
+                  <h3 class="product-card__title">RF D.E.S.S.TM Key</h3>
+                  <p class="product-card__price">59.99 &euro;</p>
+                  <p class="out-off-stock--text">out off stock</p>
+                  <a href="#" class="notify-link"> <span>notify me</span> </a>
+                  <button class="product-card__basket"></button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__top flex space-between">
+        <div class="footer__top-item newsletter">
+          <h3 class="footer__top-item--title">Subscribe to our newsletter and find out about the promotions faster</h3>
+          <form action="#" class="newsletter-form flex">
+            <input type="email" class="newsletter-form__input" placeholder="Add your email"><button type="submit" class="newsletter-form__btn">Send</button>
+          </form>
+        </div>
+        <div class="footer__top-item">
+          <h3 class="footer__top-item--title">Information</h3>
+          <ul class="footer-list">
+            <li><a class="footer-list__link" href="#">About</a></li>
+            <li><a class="footer-list__link" href="#">Contact</a></li>
+            <li><a class="footer-list__link" href="#">Promotions</a></li>
+            <li><a class="footer-list__link" href="#">Shops</a></li>
+          </ul>
+        </div>
+        <div class="footer__top-item">
+          <h3 class="footer__top-item--title">Online-store</h3>
+          <ul class="footer-list">
+            <li><a class="footer-list__link" href="#">Delivery and colletction</a></li>
+            <li><a class="footer-list__link" href="#">Payment</a></li>
+            <li><a class="footer-list__link" href="#">Return</a></li>
+            <li><a class="footer-list__link" href="#">Latest news</a></li>
+          </ul>
+        </div>
+        <div class="footer__top-item footer__social flex">
+          <a href="#" class="footer__social-link"><img src="/instagram.0198f818.svg" alt="instagram"></a>
+          <a href="#" class="footer__social-link"><img src="/vk.352d81fe.svg" alt="vk"></a>
+          <a href="#" class="footer__social-link"><img src="/facebook.e8cd3c46.svg" alt="facebook"></a>
+          <a href="#" class="footer__social-link"><img src="/youtube.cffac022.svg" alt="youtube"></a>
+        </div>
+      </div>
+      <div class="footer__bottom flex">
+        <a href="#" class="footer__bottom-link">Contract offer</a>
+        <a href="#" class="footer__bottom-link">Cookie policy</a>
+      </div>
+    </div>
+  </footer>
   <script src="/js.00a46daa.js"></script>
 </body>
 

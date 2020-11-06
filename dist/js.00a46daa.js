@@ -14317,7 +14317,7 @@ function imageSliders() {
     dots: true,
     prevArrow: '<button class="banner-section__slider-btn banner-section__slider-btnprev"></button>',
     nextArrow: '<button class="banner-section__slider-btn banner-section__slider-btnnext"></button>'
-  }); // Popular products slider
+  }); // Products slider
 
   (0, _jquery.default)('.products-slider').slick({
     slidesToShow: 4,
@@ -14343,21 +14343,13 @@ function tabs() {
   (0, _jquery.default)('.menu-categories__link').on('click', function () {
     (0, _jquery.default)('.menu-categories__link').removeClass('active-categorie');
     (0, _jquery.default)(this).addClass('active-categorie');
-  }); // Search tabs
+  }); // Tabs
 
-  (0, _jquery.default)('.search__tabs-item').on('click', function (e) {
+  (0, _jquery.default)('.tabs-link').on('click', function (e) {
     e.preventDefault();
-    (0, _jquery.default)('.search__tabs-item').removeClass('search__active-link');
-    (0, _jquery.default)('.search__content-item').removeClass('active');
-    (0, _jquery.default)(this).addClass('search__active-link');
-    (0, _jquery.default)((0, _jquery.default)(this).attr('href')).addClass('active');
-  }); // Popular products tabs
-
-  (0, _jquery.default)('.products__tabs-link').on('click', function (e) {
-    e.preventDefault();
-    (0, _jquery.default)('.products__tabs-link').removeClass('products__active-link');
-    (0, _jquery.default)('.products__tabs-content__item').removeClass('active');
-    (0, _jquery.default)(this).addClass('products__active-link');
+    (0, _jquery.default)((0, _jquery.default)(this).siblings()).removeClass('tabs-link--active');
+    (0, _jquery.default)((0, _jquery.default)(this).parent().siblings().find('div')).removeClass('active');
+    (0, _jquery.default)(this).addClass('tabs-link--active');
     (0, _jquery.default)((0, _jquery.default)(this).attr('href')).addClass('active');
   });
 }
@@ -14428,7 +14420,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "56931" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "51157" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};

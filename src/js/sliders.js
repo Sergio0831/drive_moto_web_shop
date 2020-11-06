@@ -10,7 +10,7 @@ export function imageSliders() {
         prevArrow: '<button class="banner-section__slider-btn banner-section__slider-btnprev"></button>',
         nextArrow: '<button class="banner-section__slider-btn banner-section__slider-btnnext"></button>'
   })
-  // Popular products slider
+  // Products slider
   $('.products-slider').slick({
     slidesToShow: 4,
     slidesToScroll: 1,

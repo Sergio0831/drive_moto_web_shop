@@ -1,0 +1,68 @@
+.footer {
+  background: $bg-color;
+  &__top {
+    padding: 43px 76px 46px 0;
+    .newsletter {
+      width: 295px;
+      &-form {
+        margin-top: 42px;
+        &__input {
+          padding: 8px 12px;
+          font-size: 14px;
+          line-height: 17px;
+          background: $light-color;
+          border: none;
+          outline: none;
+          &::placeholder {
+            color: $oldPrice-color;
+          }
+        }
+        &__btn {
+          margin-left: -1px;
+          padding: 10px 16px;
+          background: $main-color;
+          color: $light-color;
+          font-weight: 600;
+          font-size: 11px;
+          line-height: 13px;
+          letter-spacing: 0.12em;
+          text-transform: uppercase;
+          cursor: pointer;
+          border: none;
+          outline: none;
+        }
+      }
+    }
+    &-item {
+      &--title {
+        font-weight: bold;
+        font-size: 14px;
+        line-height: 17px;
+        color: $text-color;
+      }
+    }
+  }
+  &__bottom {
+    padding-bottom: 22px;
+    justify-content: center;
+    &-link {
+      margin: 0 40px;
+      font-size: 10px;
+      line-height: 12px;
+      color: $text-color;
+    }
+  }
+  &-list {
+    &__link {
+      font-size: 14px;
+      line-height: 17px;
+      color: $text-color;
+    }
+  }
+  &__social {
+    &-link {
+      margin-right: 30px;
+      align-self: center;
+    }
+  }
+}

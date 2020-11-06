@@ -39,7 +39,7 @@
         }
       }
     }
-    &-link.products__active-link {
+    &-link.tabs-link--active {
       &::before {
         content: "";
         position: absolute;
@@ -68,7 +68,7 @@
     }
     &__btnprev {
       background: url(../images/products/arrow-prev.svg) center no-repeat;
-      left: -20px;
+      left: -40px;
     }
     &__btnnext {
       background: url(../images/products/arrow-next.svg) center no-repeat;

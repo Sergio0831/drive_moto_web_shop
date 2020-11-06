@@ -1,0 +1,24 @@
+.banner {
+  justify-content: space-around;
+  min-height: 165px;
+  margin-bottom: 71px;
+  padding: 28px 123px 28px 71px;
+  background: $main-color;
+  align-items: center;
+  &__text {
+    width: 308px;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 36px;
+    color: $light-color;
+  }
+  &__btn {
+    padding: 3px 41px;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 50px;
+    color: $text-color;
+    background: $light-color;
+    text-transform: uppercase;
+  }
+}
