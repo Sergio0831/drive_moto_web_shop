@@ -18,3 +18,4 @@ export function imageSliders() {
     nextArrow: '<button class="products-slider__btn products-slider__btnnext"></button>'
   })
 }
+

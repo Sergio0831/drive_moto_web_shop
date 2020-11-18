@@ -4,8 +4,8 @@
   "description": "Drive Moto E-Commerce",
   "main": "index.js",
   "scripts": {
-    "dev": "webpack serve",
-    "build": "webpack"
+    "dev": "webpack serve --config webpack.dev.js --open Chrome.exe",
+    "build": "webpack --config webpack.prod.js"
   },
   "keywords": [
     "js"
@@ -15,11 +15,29 @@
   "devDependencies": {
     "@babel/core": "^7.12.3",
     "autoprefixer": "^9.8.6",
-    "sass": "^1.27.0"
+    "clean-webpack-plugin": "^3.0.0",
+    "copy-webpack-plugin": "^6.3.1",
+    "css-loader": "^5.0.1",
+    "css-minimizer-webpack-plugin": "^1.1.5",
+    "file-loader": "^6.2.0",
+    "html-loader": "^1.3.2",
+    "html-webpack-plugin": "^4.5.0",
+    "node-sass": "^5.0.0",
+    "resolve-url-loader": "^2.3.2",
+    "sass": "^1.27.0",
+    "sass-loader": "^10.1.0",
+    "style-loader": "^2.0.0",
+    "terser-webpack-plugin": "^5.0.3",
+    "url-loader": "^4.1.1",
+    "webpack": "^5.5.0",
+    "webpack-cli": "^4.2.0",
+    "webpack-dev-server": "^3.11.0",
+    "webpack-merge": "^5.4.0"
   },
   "dependencies": {
     "jquery": "^3.5.1",
-    "normalize.css": "^8.0.1",
+    "mini-css-extract-plugin": "^1.3.1",
+    "normalize-scss": "^7.0.1",
     "popper.js": "^1.16.1",
     "slick-carousel": "^1.8.1"
   }

@@ -28,7 +28,7 @@
     z-index: 5;
     cursor: pointer;
     &::before {
-      content: url("../images/heart.svg");
+      content: url("../../images/heart.svg");
       position: absolute;
       width: 24px;
       height: 24px;
@@ -36,7 +36,7 @@
       left: 0;
     }
     &--active::before {
-      content: url("../images/products/heart-fill.svg");
+      content: url("../../images/products/heart-fill.svg");
     }
   }
   &__hover-link {
@@ -86,7 +86,7 @@
     border: none;
     outline: none;
     &::before {
-      content: url("../images/products/basket-white.svg");
+      content: url("../../images/products/basket-white.svg");
       position: absolute;
       width: 30px;
       height: 23px;
